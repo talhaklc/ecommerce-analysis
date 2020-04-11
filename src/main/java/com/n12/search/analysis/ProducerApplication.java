@@ -24,7 +24,7 @@ public class ProducerApplication {
         config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,new StringSerializer().getClass().getName());
 
         Producer kafkaProducer = new KafkaProducer(config);
-
+        System.out.println("Bitti");
         List<String> productList = Arrays.asList("Makarna", "Nike Ayakkabi", "Dell laptop", "Samsung Lcd Tv", "Balık","Paspas","Bıçak","Maske");
         while (true){
             SearchProductModel spm=new SearchProductModel();
