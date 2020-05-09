@@ -18,6 +18,7 @@ public class ProducerApplication {
     public static void main(String[] args) {
 
         System.out.println("Test1");
+        System.out.println("test2");
         String server = "localhost:9092";
         Properties config = new Properties();
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,server);
